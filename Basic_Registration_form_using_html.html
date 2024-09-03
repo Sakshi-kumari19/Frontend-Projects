@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Website</title>
+</head>
+<body style="background-color: rgb(253, 219, 174);">
+    <table border="1" cellpadding="5" cellspacing="0" align="center" style="background-color: rgb(167, 214, 255);">
+        <form action="index.html">
+            <tr>
+                <td colspan="4" align="center"><h1>Registration Form</h1></td>
+            </tr>
+
+            <tr>
+                <th><label for="">Student name</label></th>
+                <td><input type="text" placeholder="First name" minlength="3" maxlength="10"></td>
+                <td><input type="text" placeholder="middle name"></td>
+                <td><input type="text" placeholder="Last name"></td>
+            </tr>
+            <tr>
+                <th><label for="">Father's name</label></th>
+                <td><input type="text" ></td>
+                <th><label for="">Mother's name</label></th>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <th><label for="">DOB</label></th>
+                <td><input type="date"required min="2001-01-02"></td>
+                <th><label for="">Gender</label></th>
+                <td><label for="">Male</label><input type="radio"> <label for="">Female</label> <input type="radio"><label for="">Other</label> <input type="radio"></td>
+
+            </tr>
+
+            <tr>
+                <th>Category</th>
+                <td>Gen <input type="radio">OBC <input type="radio">SC ST <input type="radio"></td>
+                <th>Handicapped</th>
+                <td>Yes <input type="radio">No <input type="radio"></td>
+            </tr>
+
+            <tr>
+                <th>Ex-Serviceman</th>
+                <td>Yes <input type="radio">No <input type="radio"></td>
+                <th>EWS</th>
+                <td>Yes <input type="radio">No <input type="radio"></td>
+            </tr>
+
+            <tr>
+                <th>Email ID</th>
+                <td><input type="email"></td>
+                <th>Contact No.</th>
+                <td><input type="tel" pattern="[0-9]{10}"></td>
+            </tr>
+
+            <tr>
+                <th>State:</th>
+                <td><select name="state" id="state">
+                    <option value="" disabled selected>select any one</option>
+                   
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        
+                    
+                    
+                </select></td>
+                <th>city</th>
+                <td>
+                    <select name="city" id="city">
+                        <option value=""disabled selected>Select any one</option>
+                        <option value="">Gautam buddha nagar</option>
+                        <option value="">Ghaziabad</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="photo">Upload photo</label></th>
+                <td><input type="file" id="photo" name="photo" accept="image/*" required></td>
+
+                <th><label for="Signature">Upload Signature</label></th>
+                <td><input type="file" id="Signature" name="Signature" accept="image/*" required></td>
+                
+
+            </tr>
+
+            <tr>
+                <th><label for="add">Address</label></th>
+                <td colspan="3"><textarea id="add" name="add" rows="3" cols="100"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="20" rowspan="" align="center"><button type="submit" style="background-color: rgb(245, 247, 247);margin: 4px 2px;">Submit</button></td>
+            </tr>
+
+            
+
+            
+            
+        </form>
+    </table>
+
+    <footer>
+        <p >&copy; 2024 Sakshi Kumari</p>
+    </footer>
+</body>
+</html>
