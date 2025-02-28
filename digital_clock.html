@@ -1,0 +1,38 @@
+// It is a simple digital clock created using html, css and basic javascript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        body{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background-color: #000000;
+           color: white;
+           font-size: 2rem;
+           font-family: Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Current Time </h1> 
+    <h2 id="clock"></h2>
+            <script>
+                // function to change the time
+                function new_time(){
+                    let current_time = new Date();
+                    document.getElementById('clock').innerHTML = current_time.toLocaleTimeString();
+                }
+                // function to call 'new_time' function after 1 sec or 1000 ms
+                setInterval(new_time, 1000);
+                new_time();
+            </script> 
+</body>
+</html>
